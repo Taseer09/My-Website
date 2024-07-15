@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TraitorrAI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .navbar {
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .bg-custom {
+      background-color: rgba(113, 124, 130, 0.58) !important;
+    }
+
+    .bg-custom {
+      background-color: rgba(113, 124, 130, 0.58) !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar fixed w-full z-10 bg-transparent transition-colors duration-500 ease-in-out">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <!-- Logo and Home Link -->
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="#home">
+                        <img class="h-32 w-auto" src="logo.png" alt="Your Company">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#about" id="about-link" class="navbar-link px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <a href="#services" id="services-link" class="navbar-link px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                <a href="#team" id="team-link" class="navbar-link px-3 py-2 rounded-md text-sm font-medium">Team</a>
+                <a href="#contact" id="contact-link" class="navbar-link px-3 py-2 rounded-md text-sm font-medium">Contact Us</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#about" class="navbar-link block px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="#services" class="navbar-link block px-3 py-2 rounded-md text-base font-medium">Services</a>
+            <a href="#team" class="navbar-link block px-3 py-2 rounded-md text-base font-medium">Team</a>
+            <a href="#contact" class="navbar-link block px-3 py-2 rounded-md text-base font-medium">Contact Us</a>
+        </div>
+    </div>
+</nav>
+
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero relative">
+    <video autoplay loop muted class="w-full">
+        <source src="background-video.mp4" type="video/mp4">
+    </video>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full text-white">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4">TraitorrAI</h1>
+        <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6">Engineering The Future</p>
+        <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md text-lg sm:text-xl">Learn More</button>
+    </div>
+</section>
+
+
+  <!-- About Section -->
+<section id="about" class="about">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between py-16">
+          <!-- Content -->
+          <div class="md:w-1/2 md:pr-8">
+              <h2 class="text-3xl font-bold mb-4">About Us</h2>
+              <p class="mb-4">Welcome to TraitorrAI, a pioneering organization dedicated to advancing artificial intelligence. We believe in AI's potential to revolutionize industries, solve complex problems, and create new possibilities for the future.</p>
+
+              <h2 class="text-2xl font-bold mb-2">Our Vision</h2>
+              <p class="mb-4">To be at the forefront of AI innovation, developing ethical and accessible solutions that make a meaningful impact on society.</p>
+
+              <h2 class="text-2xl font-bold mb-2">Our Mission</h2>
+              <p class="mb-4">To explore uncharted territories in AI, leveraging cutting-edge research and technology to address critical challenges and unlock new opportunities across various domains.</p>
+          </div>
+          
+          <!-- Image -->
+          <div class="md:w-1/2 md:pl-8">
+              <img class="w-full h-auto md:max-h-full" src="about-image.jpg" alt="About Image">
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="services-content">
+      <h2>Our Services</h2>
+      <ul>
+        <li>
+          <i class="fas fa-robot"></i>
+          <h3>AI Research & Development</h3>
+          <p>We develop custom AI solutions tailored to your business needsOur team is dedicated to advancing the field of artificial intelligence through cutting-edge research. We specialize in areas such as deep learning, reinforcement learning, natural language processing, and computer vision. Our work is regularly published in prestigious AI journals and conferences, and we collaborate with leading universities and research institutions to push the boundaries of what's possible in AI.</p>
+        </li>
+        <li>
+          <i class="fas fa-chart-line"></i>
+          <h3>AI-Based Robotics Development</h3>
+          <p>We provide data analytics services to help you make informed decisionsWe design and develop AI-based robots that are capable of autonomous navigation, decision-making, and interaction. Our expertise includes creating industrial robots for manufacturing and logistics, service robots for healthcare and hospitality, and improving human-robot interaction with advanced natural language understanding and emotional intelligence. Our goal is to build robots that can seamlessly integrate into various environments and enhance productivity and quality of life.</p>
+        </li>
+        <li>
+          <i class="fas fa-lock"></i>
+          <h3>Innovative AI Solutions</h3>
+          <p>We offer cybersecurity solutions to protect your business from threatsInnovation is at the heart of what we do. We develop new AI-driven products and services that address unique challenges and improve existing processes. From rapid prototyping to creating bespoke AI applications tailored to specific client needs, we are committed to delivering solutions that harness the full potential of AI technology. Our approach ensures that our innovations are not only groundbreaking but also practical and impactful.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+<!-- Team Section -->
+<section id="team" class="team bg-gray-100 py-16">
+  <div class="flex justify-center items-center h-full">
+    <div class="container px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center">Meet Our Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Team Member 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="team-member-1.jpg" alt="Team Member 1" class="w-full object-cover" style="height: 30rem;">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Taseer Mehboob</h3>
+            <p class="text-gray-600">Founder & CEO</p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="team-member-2.jpg" alt="Team Member 2" class="w-full object-cover" style="height: 30rem;">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Uzair Ullah</h3>
+            <p class="text-gray-600">Full Stack Web Developer</p>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="team-member-3.jpg" alt="Team Member 3" class="w-full object-cover" style="height: 30rem;">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Aizaz Ahmad</h3>
+            <p class="text-gray-600">Data Scientist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-content">
+      <h2>Get in Touch</h2>
+      <p>Have a question, want to learn more about Us or want to Join Us? Contact us today!</p>
+      <form action="https://formsubmit.co/fe1493da4ff1d7f1e286b52b67d628f6" method="POST">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 TraitorrAI. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+
+// Event listener for scroll event
+document.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('bg-custom');
+    } else {
+        navbar.classList.remove('bg-custom');
+    }
+});
+
+// Event listener for mobile menu button click
+document.getElementById('mobile-menu-button').addEventListener('click', function () {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+});
+
+
+</script>
+</body>
+
+</html>
